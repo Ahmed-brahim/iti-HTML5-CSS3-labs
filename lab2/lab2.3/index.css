@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif, Geneva, Tahoma, sans-serif;
+}
+
+nav {
+    width: 100vw;
+    min-height: 10vh;
+    /*border: 2px solid black;*/
+    /*margin: 2px;*/
+    padding: 20px;
+    background-color: lightgrey;
+}
+
+ul>li {
+    list-style: none;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+ul>li:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.section1 {
+    background-image: url("./pexels-884788.jpg");
+    height: 90vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+section>a {
+    text-decoration: none;
+    color: #fff;
+    background-color: lightsalmon;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    font: bold 15px verdana;
+}
+
+section>a:hover {
+    background-image: linear-gradient(to left, rgb(232 216 216), rgb(88 143 230));
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+   
+}
+.section2{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.map-img{
+    width: 250px;
+    height: 250px;
+}
+.branches-section{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    height: 270px;
+    padding: 0;
+    flex-direction: column;
+    align-content: flex-end;
+}
+.branch-div{
+    
+    background-color: rgb(238, 237, 237);
+    display: flex;
+    font-weight: bold;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 200px;
+    height: 50px;
+    font-size: x-small;
+    padding:5px 0px 5px 5px;
+    color: rgb(73, 73, 73);
+    margin-right: 20px;
+    margin-top: 10px;
+    
+}
+.branch-div:hover{
+    color: rgb(180, 0, 0);
+}
+.titles{
+    margin-top: 50px;
+    text-align: center;
+}
+footer{
+    background-color: rgb(1, 1, 42);
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-left-section{
+    color: white;
+    padding: 10px;
+}
+.footer-left-section>p{
+    color: rgb(183, 182, 182);
+    font-size: 12px;
+    padding: 5px 0px;
+}
+.color-gray{
+    color: gray;
+}
+.footer-right-section{
+    width: 300px;
+    color: white;
+    padding: 10px;
+}
+.footer-right-section>h4{
+    display: flex;
+}
+.media-icon{
+    width: 30px;
+    margin: 10px 5px 0px 0px;
+}

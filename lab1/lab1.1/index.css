@@ -1,0 +1,84 @@
+*{
+    margin: 5px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+main{
+    border: 1px solid black;
+    width: 90%;
+    margin: auto;
+}
+header{
+    border: 1px solid black;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgb(182, 223, 248);
+    margin: 5px;
+    /*********/
+    text-align: center;
+    height: 35px;
+    padding: 7px;
+    margin-bottom: 10px;
+}
+nav{
+    background-color: blue;
+    margin: 5px;
+    color: white;
+    height: 40px;
+    padding: 5px 0px 5px 0px;
+}
+
+a{
+    margin-left: 10px;
+}
+.inlineBlock
+{
+    display: inline-block;
+}
+section{
+    border: 1px solid black;
+    width:75%;
+    padding: 5px 5px;
+}
+h4{
+    margin: 0px;
+}
+article{
+    border: 1px solid black;
+    padding: 3px 5px; 
+    margin: 10px 5px;
+}
+.background-gray{
+    background-color: gainsboro;
+}
+.background-blue{
+    background-color: rgb(182, 223, 248);
+}
+aside{
+    border: 1px solid black;
+    width: 21%;
+    display: inline-block;
+}
+div{
+    border: 1px solid black;
+    text-align: center;
+    height: 30px;
+    padding: 6px;
+}
+footer{
+    border: 1px solid black;
+    text-align: center;
+    height: 35px;
+    padding: 7px;
+    margin-bottom: 10px;
+    background-color: rgb(182, 223, 248);
+}
+@media all and (max-width: 700px) {
+    aside{
+        display: none;
+    }
+    section{
+        width:95%;
+        margin: auto;
+    }
+  }

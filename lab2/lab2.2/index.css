@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 750px;
+    background-image: url("./images/pexels.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    line-height: 30px;
+    text-align: center;
+    padding-top: 250px;
+    font-size: 15px;
+    color: whitesmoke;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.button {
+    width: 15%;
+    padding: 7px;
+    margin: 20px;
+    background: none;
+    color: whitesmoke;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.button:hover {
+    background-color: orange;
+    cursor: pointer;
+}
+
+.activites {
+    text-align: center;
+    width: 20%;
+    margin: 50px auto;
+    font-size: 40px;
+    border-block-end: 3px solid gainsboro;
+}
+
+.activites-cards {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.activity-card {
+    width: 30%;
+    text-align: center;
+    padding: 8px;
+}
+
+.img-card {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
+}
+
+.media-section {
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    width: 100%;
+    padding: 5px;
+    transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+.activity-card:hover .media-section {
+    display: flex; /* Visible when hovering */
+    justify-content: space-between;
+    transition: opacity 0.3s ease;
+}
+.media-section a {
+    color: white;
+    font-size: large; /* Increased icon size */
+    padding: 5%; /* More space around icons */
+    text-align: center;
+    text-decoration: none;
+    margin: 2 px; /* More spacing between icons */
+    border-radius: 50%;
+    width: 18%; /* Larger circle */
+    height: 18%; /* Larger circle */
+    line-height: 20px; /* Center vertically */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.media-section a:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+.footer-section{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+footer{
+    width: 24.5%;
+    text-align: center;
+    /*margin: 100px 0px 100px 0px;*/
+    margin: auto;
+    margin-top: 100px;
+}
+.footer-img{
+    width: 100%;
+    position: relative;
+    opacity: 0.5;
+    margin-bottom: 60px;
+}
+footer>p{
+    display: none;
+    position:absolute;
+    width: 24%;
+    text-align: center;
+}
+footer:hover p, footer:hover .footer-img{
+    
+    display: flex;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+@media all and (max-width:700px) {
+    .activity-card {
+        width: 100%;
+    }
+    footer, footer>p{
+        width: 100%;
+    }
+    
+}

@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+    margin: 50px auto;
+}
+.buttons{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    margin-bottom: 20px;
+}
+button{
+    background-color: rgb(121, 147, 234);
+    color: whitesmoke;
+    padding: 10px;
+    width: 140px;
+    font-size: 15px;
+    border: 1px solid black;
+    margin-bottom: 50px;
+}
+.square{
+    border: 2px solid black;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: animate 5s infinite;
+}
+#pause:hover ~.square{
+    animation-play-state: paused;
+}
+#stop:hover ~ .square{
+    animation: none;
+}
+.square:hover{
+    animation-play-state: paused;
+}
+@keyframes animate{
+    25%{
+        transform: translate(400px);
+    }
+    50%{
+        transform: translate(400px,300px);
+
+    }
+    75%{
+        transform: translate(0,300px);
+
+    }
+    100%{
+        transform: translate(0,0);
+
+    }
+}
