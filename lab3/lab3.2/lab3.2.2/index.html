@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Video Control</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="main">
+    <div class="aside">
+      <button id="play">Play</button>
+      <button id="pause">Pause</button>
+      <button id="speed-up">Speed Up</button>
+      <button id="speed-Down">Speed Down</button>
+      <button id="mute">Mute</button>
+      <button id="reload">Reload</button>
+    </div>
+
+    <div class="content">
+      <div>
+        <video id="vid" src="../arcane/e1.mp4"></video>
+        <br /><input min="0" id="range" type="range" value="0" />
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>

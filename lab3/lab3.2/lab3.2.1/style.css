@@ -1,0 +1,54 @@
+.main {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  background-color: rgb(249, 206, 206);
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 3vh 4vw;
+  height: 90vh;
+}
+.content {
+  border: 5px solid rgb(0, 162, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: rgb(0, 0, 0);
+}
+.content div {
+  width: 80%;
+  margin: auto;
+}
+.content video {
+  width: 100%;
+  margin: auto;
+  height: 50vh;
+  border-radius: 20px;
+  border: 2px solid black;
+  background-color: rgb(249, 206, 206);
+}
+.aside {
+  padding: 3vh 3vw;
+}
+.aside button {
+  background-color: rgb(4, 138, 255);
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 2vh;
+  height: 6vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+  width: 10vw;
+  border: none;
+}
+.aside button:hover {
+  color: #ccc;
+  cursor: pointer;
+  transform: scale(1.05);
+}
